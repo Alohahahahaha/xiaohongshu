@@ -22,7 +22,7 @@ class XiaoHongShu {
     save_file() {
         const {code: newCode} = generator(this.ast);
         files.writeFileSync(
-            './xs/decode.js',
+            './decode.js',
             newCode,
             "utf-8"
         );
